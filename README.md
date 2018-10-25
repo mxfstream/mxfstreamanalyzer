@@ -1,6 +1,6 @@
 # Cinegy MXFstream Analyser Tool
 
-Use this tool to view inbound metadata, network, RTP and TS packet details on Windows or Linux. 
+Use this tool to view inbound metadata, network, RTP and TS packet details on Windows, Mac and Linux. 
 
 ## How easy is it?
 
@@ -27,6 +27,8 @@ TODO
 ```
 
 We will be adding MSIs for Windows and Debian / Ubuntu packages soon - but currently if you want to run on Linux you need to clone the repository and run 'dotnet build' or 'dotnet publish -r release -c linux-x64' to general binaries.
+
+Mac support is still a work in progress, but once we get multicast working nicely we will create a DMG and add a brew package.
 
 Just to make your life easier, we auto-build this using AppVeyor - here is how we are doing right now: 
 
