@@ -1,0 +1,28 @@
+version: 0.0.{build}
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+configuration: Release
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}-beta'
+  package_version: '{version}-beta'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}-beta'
+before_build:
+- cmd: nuget restore
+build:
+  project: Cinegy.MXFstreamAnalyser.sln
+  verbosity: minimal
+after_build:
+- cmd: >-
+    7z a MXFstreamAnalyser-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\Cinegy.MXFstreamAnalyser\bin\Release\net461\TsAnalyser.exe
+
+    appveyor PushArtifact MXFstreamAnalyser-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_VERSION%.zip
+
+    7z a MXFstreamAnalyser-%APPVEYOR_BUILD_VERSION%-PDB.zip %APPVEYOR_BUILD_FOLDER%\Cinegy.MXFstreamAnalyser\bin\release
+    
+    appveyor PushArtifact MXFstreamAnalyser-%APPVEYOR_BUILD_VERSION%-PDB.zip

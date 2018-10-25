@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{375E8EE1-AEE2-402B-982D-4AE07C9322D5}") = "Cinegy.MXFstreamAnalyzer", "Cinegy.MXFstreamAnalyzer\Cinegy.MXFstreamAnalyzer.csproj", "{78C70056-AA51-4F88-8B4F-BFC754811E29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78C70056-AA51-4F88-8B4F-BFC754811E29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C70056-AA51-4F88-8B4F-BFC754811E29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C70056-AA51-4F88-8B4F-BFC754811E29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C70056-AA51-4F88-8B4F-BFC754811E29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42B7FC81-3338-43AB-8415-01592C042B09}
+	EndGlobalSection
+EndGlobal
