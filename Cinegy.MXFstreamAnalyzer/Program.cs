@@ -39,7 +39,7 @@ namespace Cinegy.MXFstreamAnalyzer
         private static Options _options;
         private static bool _warmedUp;
         private static  Logger _logger;
-        private static Analyzer _analyzer;
+        private static Analyser _analyzer;
         private static readonly DateTime StartTime = DateTime.UtcNow;
         private static bool _pendingExit;
         private static readonly UdpClient UdpClient = new UdpClient();
@@ -133,7 +133,7 @@ namespace Cinegy.MXFstreamAnalyzer
             
             LogSetup.ConfigureLogger("tsanalyzer", opts.OrganizationId, opts.DescriptorTags, "https://telemetry.cinegy.com", opts.TelemetryEnabled, false, "TSAnalyzer", buildVersion );
 
-            _analyzer = new Analyzer(_logger);
+            _analyzer = new Analyser(_logger);
 
             var location = Assembly.GetEntryAssembly().Location;
             
