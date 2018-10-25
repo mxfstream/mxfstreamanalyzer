@@ -15,14 +15,10 @@ dotnet_csproj:
 before_build:
 - cmd: nuget restore
 build:
-  project: Cinegy.MXFstreamAnalyser.sln
+  project: Cinegy.MXFstreamAnalyzer.sln
   verbosity: minimal
 after_build:
 - cmd: >-
-    7z a MXFstreamAnalyser-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\Cinegy.MXFstreamAnalyser\bin\Release\net461\TsAnalyser.exe
-
-    appveyor PushArtifact MXFstreamAnalyser-%APPVEYOR_REPO_BRANCH%-%APPVEYOR_BUILD_VERSION%.zip
-
-    7z a MXFstreamAnalyser-%APPVEYOR_BUILD_VERSION%-PDB.zip %APPVEYOR_BUILD_FOLDER%\Cinegy.MXFstreamAnalyser\bin\release
+    7z a MXFstreamAnalyzer-%APPVEYOR_BUILD_VERSION%-PDB.zip %APPVEYOR_BUILD_FOLDER%\Cinegy.MXFstreamAnalyzer\bin\release
     
-    appveyor PushArtifact MXFstreamAnalyser-%APPVEYOR_BUILD_VERSION%-PDB.zip
+    appveyor PushArtifact MXFstreamAnalyzer-%APPVEYOR_BUILD_VERSION%-PDB.zip
