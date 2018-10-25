@@ -30,11 +30,11 @@ We will be adding MSIs for Windows and Debian / Ubuntu packages soon - but curre
 
 Mac support is still a work in progress, but once we get multicast working nicely we will create a DMG and add a brew package.
 
-Just to make your life easier, we auto-build this using AppVeyor - here is how we are doing right now: 
+Just to make your life easier, we auto-build this using AppVeyor - here is how we are doing right now for master: 
 
-[![Build status](https://ci.appveyor.com/api/projects/status/08dqscip26lr0g1o/branch/master?svg=true)](https://ci.appveyor.com/project/cinegy/mxfstreamanalyser/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/cn9vy12bi3a617cx/branch/master?svg=true)](https://ci.appveyor.com/project/cinegy/mxfstreamanalyzer/branch/master)
 
 You can check out the latest compiled binary from the master or pre-master code here:
 
-[AppVeyor MXFstreamAnalyser Project Builder](https://ci.appveyor.com/project/cinegy/mxfstreamanalyser/build/artifacts)
+[AppVeyor MXFstreamAnalyser Project Builder](https://ci.appveyor.com/project/cinegy/mxfstreamanalyzer/build/artifacts)
 
